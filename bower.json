@@ -20,6 +20,7 @@
 		"vendor"
 	],
 	"dependencies": {
-		"angular": "~1.2.28"
+		"angular": "~1.2.28",
+		"modernizr": "http://modernizr.com/downloads/modernizr-latest.js"
 	}
 }
