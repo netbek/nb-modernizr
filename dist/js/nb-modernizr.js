@@ -11,15 +11,7 @@
 
 	angular
 		.module('nb.modernizr', [])
-		.factory('Modernizr', ['$window', function Modernizr ($window) {
-				var Modernizr = $window.Modernizr;
-				delete $window.Modernizr;
-				return Modernizr;
-			}])
-		.run(runBlock);
-
-	// Invoke at runtime to allow factory to delete global reference.
-	runBlock.$inject = ['Modernizr'];
-	function runBlock (Modernizr) {
-	}
+		.factory('Modernizr', ['$window', function ($window) {
+				return $window.Modernizr;
+			}]);
 })(window, window.angular);
